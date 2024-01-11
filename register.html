@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitlife - Work Hard To Get Better Life</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style2.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">Fitlife</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">Join Now</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        
+            <form action="">
+                <h2>Registration</h2>
+                <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+                </div>
+           <div class="input-box">
+                 <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+                 </span>
+                 <input type="password" required>
+                 <label>Password</label>
+           </div>
+           <div class="remember-forget">
+                <label><input type="checkbox"> Remember Me</label>
+                <a href="#">Forgot Password?</a>
+           </div>
+           <button type="submit">Login </button>
+           <div class="register-link">
+                <p>Don't have an account? <a href="file:///C:/Users/Avdhut%20Jagtap/OneDrive/Desktop/PBL/registration.html">Register</a></p>
+           </div>
+            </form>
+           </div>
+        -->
+        <div class="registration-box">
+          <h2>Registration</h2>
+          <form action="#" method="post">
+              <div class="input-group">
+                  <label for="fullname">Full Name:</label>
+                  <input type="text" id="fullname" name="fullname" required>
+              </div>
+              <div class="input-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="input-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+              </div>
+              <div class="input-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+              </div>
+              <div class="input-group">
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" required>
+              </div>
+              <div class="input-group">
+                  <label for="gender">Gender:</label>
+                  <select id="gender" name="gender" required>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                  </select>
+              </div>
+              <div class="input-group">
+                  <label for="weight">Weight (kg):</label>
+                  <input type="number" id="weight" name="weight" required>
+              </div>
+              <div class="input-group">
+                  <label for="height">Height (cm):</label>
+                  <input type="number" id="height" name="height" required>
+              </div>
+              <div class="input-group">
+                  <label for="fitness-level">Fitness Level:</label>
+                  <select id="fitness-level" name="fitness-level" required>
+                      <option value="beginner">Beginner</option>
+                      <option value="intermediate">Intermediate</option>
+                      <option value="advanced">Advanced</option>
+                  </select>
+              </div>
+              <div class="input-group">
+                  <label for="medical-conditions">Pre-existing Medical Conditions:</label>
+                  <textarea id="medical-conditions" name="medical-conditions" rows="4" required></textarea>
+              </div>
+              <div class="input-group">
+                  <label for="allergies">Allergies:</label>
+                  <textarea id="allergies" name="allergies" rows="4" required></textarea>
+              </div>
+              <button type="submit">Register</button>
+          </form>
+      </div>
+
+        </div>
+      </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+            <span class="span">Fitlife</span>
+          </a>
+
+          <p class="footer-brand-text">
+            
+          </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              KK wagh ,Amrutdham , Nashik
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:7588998164" class="footer-link">7588998164</a>
+
+              <a href="tel:+9183903978005" class="footer-link">8390397800</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">info@fitlife.com</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">services@fitlife.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
